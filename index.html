@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
     
     <link rel="stylesheet" href="css/iniciostyle.css">
   
-    <title>Chamados</title>
+    <title>BETÂNIA TV</title>
   </head>
 
   <body>
@@ -24,8 +25,7 @@
         </div>      
         <div class="nav-menu">
         <nav class="main-nav">                
-          <a href="inicio.html">Página Inicial</a>
-          <a href="contatos.html">Contato</a>
+          <a href="inicio.html"></a>
         </nav>
           <div class="homeicon">
           <a href="index.html" class="home-icon"><img src="img/home-icon.svg" alt=""></a>
@@ -98,7 +98,31 @@
     </ul>
     <button class="btn"><a class="btnlink" href="https://multicanais.cl/category/futebol/">FUTEBOL</a></button>
   </div>
+<footer><div id="mensagem">Mãe eu te amo ❤️</div>
+</footer>
+<script>
+  // Configurações
+  const velocidade = 50; // pixels por segundo
+  const intervalo = 10; // milissegundos
 
+  // Calcula a largura da tela
+  const larguraTela = window.innerWidth;
+
+  // Inicializa a posição da mensagem
+  let posicao = 0;
+
+  // Atualiza a posição da mensagem
+  function atualizarPosicao() {
+    posicao += (velocidade * intervalo) / 1000;
+    if (posicao > larguraTela) {
+      posicao = -document.getElementById('mensagem').offsetWidth;
+    }
+    document.getElementById('mensagem').style.left = posicao + 'px';
+  }
+
+  // Atualiza a posição a cada intervalo de tempo
+  setInterval(atualizarPosicao, intervalo);
+</script>
 </div>
 </div>
 </body>
